@@ -1,7 +1,6 @@
-const initialState = {value: 0};
+const initialState = {value: 0, foo: ' number'};
 
 const reducer = (state = initialState, action) => {
-
     switch(action.type) {
         case "INC": 
             return {
@@ -22,5 +21,4 @@ const reducer = (state = initialState, action) => {
             return state;
     }
 }
-
 export default reducer;
